@@ -40,7 +40,7 @@ def index():
 
   return channels_list_by_username(client,
     part='snippet,contentDetails,statistics',
-    forUsername='GoogleDevelopers')
+    forUsername='TechGuyWeb')
 
 
 @app.route('/authorize')
