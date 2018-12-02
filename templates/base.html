@@ -1,51 +1,158 @@
 {% load static %}
 
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-	<meta charset="UTF-8">
-	<!--Import Google Icon Font-->
-	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-	<!--Import materialize.css-->
-	<!-- not ready yet - I didn't make a custom stylesheet yet. <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/> -->
-	<!-- The viewport is the user's visible area of a web page. It varies with the device, and will be smaller on a mobile phone than on a computer screen. - w3schools.com -->
-    <!--Let browser know website is optimized for mobile-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-	<meta http-equiv="X-UA-Compatible" conent="ie-edge">
-	<!-- load materialize from cdn -->
-	<link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"  rel="stylesheet" >
-	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" >
-<!-- 	<link rel="stylesheet" href="{% 'css/ratings.css' %}"> -->
-<!-- 	<link rel="stylesheet" href="{% 'css/style.css' %}"> -->
-<!--	<link rel="stylesheet" href="{% 'css/bootstrap.css' %}">-->
-<!--	<link rel="stylesheet" href="{% 'css/lightbox.min.css' %}">-->
+<!DOCTYPE HTML>
+<!--
+	Full Motion by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
 -->
-	<style>
-		#content, #authorize-button, #signout-button { display: none }
+<html>
+	<head>
+		<title>Virtual1's YouTube Rating App</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="{% static 'css/main.css'%}" />
+	</head>
+	<body id="top">
 
-	</style>
+			<!-- Banner -->
+			<!--
+				To use a video as your background, set data-video to the name of your video without
+				its extension (eg. images/banner). Your video must be available in both .mp4 and .webm
+				formats to work correctly.
+			-->
+				<section id="banner" data-video="images/banner">
+					<div class="inner">
+						<header>
+							<h1>YouTube Rating App</h1>
+							<h4>Created by Jessica aka Virtual1</h4>
+							<p>Here you can share and rate YouTube videos and channels that are informative, fun or supportive, that you found useful in your developer journey, and help us n00bs to filter through all the noise.<br />
+							</p>
+						</header>
+						<a href="#main" class="more">Learn More</a>
+					</div>
+				</section>
 
-	<title>Virtual1's YT Rating App</title>
-</head>
-<body>
-	<nav class="red">
-		<div class="nav-wrapper">
-			<div class="container">
-				<a href="#!" class="brand-logo">Virtual1's YouTube Rating App</a>
-			</div>
-		</div>
-	</nav>
-	<br>
+			<!-- Main -->
+				<div id="main">
+					<div class="inner">
 
-{% block content %} {% endblock %}
+					<!-- Boxes -->
+						<div class="thumbnails">
 
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-	<script src="main.js"></script>
-	<!-- from https://developers.google.com/youtube/v3/quickstart/js -->
-	<script async defer src="https://apis.google.com/js/api.js"
-			onload="this.onload=function(){};handleClientLoad()"
-			onreadystatechange="if (this.readyState === 'complete') this.onload()">
-		</script>
-</body>
+							<div class="box">
+								<a href="https://youtu.be/u-RLu_8kwA0" class="image fit"><img src="images/JoshuaFluke.jpg" alt="" /></a>
+								<div class="inner">
+									<h3>Joshua Fluke</h3>
+									<p>Interdum amet accumsan placerat commodo ut amet aliquam blandit nunc tempor lobortis nunc non. Mi accumsan.</p>
+									<a href="https://www.youtube.com/channel/UC-91UA-Xy2Cvb98deRXuggA" class="button fit" data-poptrox="youtube,800x400">Watch</a>
+								</div>
+							</div>
+
+							<div class="box">
+								<a href="https://youtu.be/V_NZxfpEZhI" class="image fit"><img src="images/TraversyMedia.jpg" alt="" /></a>
+								<div class="inner">
+									<h3>Traversy Media</h3>
+									<p>Interdum amet accumsan placerat commodo ut amet aliquam blandit nunc tempor lobortis nunc non. Mi accumsan.</p>
+									<a href="https://www.youtube.com/channel/UC29ju8bIPH5as8OGnQzwJyA" class="button style2 fit" data-poptrox="youtube,800x400">Watch</a>
+								</div>
+							</div>
+
+							<div class="box">
+								<a href="https://youtu.be/UtiXY4H55Nc" class="image fit"><img src="images/RealToughCandy.jpg" alt="" /></a>
+								<div class="inner">
+									<h3>RealToughCandy</h3>
+									<p>Interdum amet accumsan placerat commodo ut amet aliquam blandit nunc tempor lobortis nunc non. Mi accumsan.</p>
+									<a href="https://www.youtube.com/channel/UC54NcJvLCvM2CNaBjd5j6HA" class="button style3 fit" data-poptrox="youtube,800x400">Watch</a>
+								</div>
+							</div>
+
+							<div class="box">
+								<a href="https://youtu.be/cEGIFZDyszA" class="image fit"><img src="images/TheNewBoston.jpg" alt="" /></a>
+								<div class="inner">
+									<h3>The New Boston</h3>
+									<p>Interdum amet accumsan placerat commodo ut amet aliquam blandit nunc tempor lobortis nunc non. Mi accumsan.</p>
+									<a href="https://www.youtube.com/user/thenewboston" class="button style2 fit" data-poptrox="youtube,800x400">Watch</a>
+								</div>
+							</div>
+
+							<div class="box">
+								<a href="https://youtu.be/WyJofPENp1A" class="image fit"><img src="images/BradHussey.jpg" alt="" /></a>
+								<div class="inner">
+									<h3>Brad Hussey</h3>
+									<p>Interdum amet accumsan placerat commodo ut amet aliquam blandit nunc tempor lobortis nunc non. Mi accumsan.</p>
+									<a href="https://www.youtube.com/user/hussey17/" class="button style3 fit" data-poptrox="youtube,800x400">Watch</a>
+								</div>
+							</div>
+
+							<div class="box">
+								<a href="https://youtu.be/cs_NCpJF-KQ" class="image fit"><img src="images/StefanMischook.jpg" alt="" /></a>
+								<div class="inner">
+									<h3>Stefan Mischook</h3>
+									<p>Interdum amet accumsan placerat commodo ut amet aliquam blandit nunc tempor lobortis nunc non. Mi accumsan.</p>
+									<a href="https://www.youtube.com/user/killerphp" class="button fit" data-poptrox="youtube,800x400">Watch</a>
+								</div>
+							</div>
+
+							<div class="box">
+								<a href="https://youtu.be/7HjI1t0WbkM" class="image fit"><img src="images/CodingPhase.jpg" alt="" /></a>
+								<div class="inner">
+									<h3>Coding Phase</h3>
+									<p>Interdum amet accumsan placerat commodo ut amet aliquam blandit nunc tempor lobortis nunc non. Mi accumsan.</p>
+									<a href="https://www.youtube.com/channel/UC46wWUso9H5KPQcoL9iE3Ug" class="button style2 fit" data-poptrox="youtube,800x400">Watch</a>
+								</div>
+							</div>
+
+							<div class="box">
+								<a href="https://youtu.be/LFWAOTMj7Yo" class="image fit"><img src="images/JonasS.jpg" alt="" /></a>
+								<div class="inner">
+									<h3>Jonas Schmedtmann</h3>
+									<p>Interdum amet accumsan placerat commodo ut amet aliquam blandit nunc tempor lobortis nunc non. Mi accumsan.</p>
+									<a href="https://www.youtube.com/channel/UCNsU-y15AwmU2Q8QTQJG1jw/about" class="button style3 fit" data-poptrox="youtube,800x400">Watch</a>
+								</div>
+							</div>
+
+							<div class="box">
+								<a href="https://youtu.be/eXBD2bB9-RA" class="image fit"><img src="images/Sentdex.jpg" alt="" /></a>
+								<div class="inner">
+									<h3>Sentdex</h3>
+									<p>Interdum amet accumsan placerat commodo ut amet aliquam blandit nunc tempor lobortis nunc non. Mi accumsan.</p>
+									<a href="https://youtu.be/eXBD2bB9-RA" class="button fit" data-poptrox="youtube,800x400">Watch</a>
+								</div>
+							</div>
+
+						</div>
+
+					</div>
+				</div>
+
+			<!-- Footer -->
+				<footer id="footer">
+					<div class="inner">
+						<h2>Please share your useful videos!
+						</h2>
+						<p>There are so many videos on YouTube, it's hard for new developers to determine which videos are good to learn from, which ones are outdated and which ones are just plain <em>bad</em>. Help us out by sharing your wisdom right here. Thank you!!  </p>
+	<!-- not linking to social accounts yet. Get the base working first
+						<ul class="icons">
+							<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+							<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+							<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+							<li><a href="Jess@Virtual1.co.za" class="icon fa-envelope"><span class="label">Email</span></a></li>
+						</ul>
+	 -->
+						<p class="copyright">&copy; Virtual1. Design: <a href="https://templated.co">TEMPLATED</a>. Images: <a href="https://unsplash.com/">Unsplash</a>. Videos: <a href="http://coverr.co/">Coverr</a>.
+						    <br>
+							based on Full Motion design by <a href="https://templated.co/">Templated</a> , released under the Creative Commons License.</p>
+					</div>
+				</footer>
+
+		<!-- Scripts -->
+			<script src="{% static 'js/jquery.min.js' %}"></script>
+			<script src="{% static 'js/jquery.scrolly.min.js' %}"></script>
+			<script src="{% static 'js/jquery.poptrox.min.js' %}"></script>
+			<script src="{% static 'js/skel.min.js' %}"></script>
+			<script src="{% static 'js/util.js' %}"></script>
+			<script src="{% static 'js/main.js' %}"></script>
+
+	</body>
 </html>
