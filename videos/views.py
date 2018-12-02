@@ -17,7 +17,7 @@ def index(request):
     return render(request, 'videos/inthemix.html', context)
 
 def video(request, video_id):
-    video = get_object_or_404(Videos, pk=video_id)
+    video = get_object_or_404(videos, pk=video_id)
 
     context = {
         'video': video

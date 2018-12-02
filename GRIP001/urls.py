@@ -22,4 +22,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
 
     path('inthemix/', include('videos.urls')),
-] + static(settings.MEDIA_URL,document_root=settings.MEDIA_ROOT)
+]
+
+## static(settings.MEDIA_URL,document_root=settings.MEDIA_ROOT)

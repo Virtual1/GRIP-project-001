@@ -3,7 +3,7 @@ from datetime import datetime
 from channels.models import Creator
 
 # Create your models here.
-class Videos(models.Model):
+class videos(models.Model):
     creator = models.ForeignKey(Creator, on_delete=models.DO_NOTHING)
     title = models.CharField(max_length=250)
     video_id = models.CharField(max_length=100)
