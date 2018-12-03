@@ -1,0 +1,12 @@
+Design for models: What fields do we need:
+CREATORS
+Creator name
+Channel name
+Channel ID
+Nr subscribers
+Nr videos
+Nr views
+Last video uploaded date
+last video uploaded title
+languages
+tech used

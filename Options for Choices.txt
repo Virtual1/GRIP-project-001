@@ -1,0 +1,53 @@
+Options for Choices file:
+Language (spoken):
+English
+
+Language (subtitles):
+English
+
+Level:
+Beginner
+Intermediate
+Advanced
+
+Type:
+Series
+All-In-One Video
+Advice
+
+Project:
+With project
+Mostly theory
+Only theory
+
+Area:
+General
+Frontend
+Backend
+Fullstack
+
+Tech used:
+Python
+Django
+Conda
+GraphQL
+Node.JS
+React
+JavaScript
+Git
+MongoDB
+Angular
+Vue
+React
+AWS
+SQL
+NoSQL
+Flutter
+MEAN stack
+MERN stack
+JAM stack
+HTML
+CSS
+Bootstrap
+Materialize
+

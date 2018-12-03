@@ -1,0 +1,30 @@
+Basic screen flow:
+INDEX: 
+Title screen showing top Creators with picture, short blurb and <view more> buttons.
+User clicks on <view more> -> redirected to Channel page
+
+CHANNEL:
+Shows Creator info, with :
+	* top 10 videos per #views, #likes, #rating 
+	* last 10 videos by upload date
+Each video has a <view> button. 
+User clicks on <view> button -> modal opens Video page
+
+VIDEO:
+Shows Video info, with :
+	* # views
+	* # likes
+	* # dislikes
+	* Current rating average
+	* Video viewer screen (can play video here)
+	* Comments from YouTube
+	* Comments from YTRA
+	* Rate this video button
+User clicks <rate> button ->
+
+RATING:
+Loads OAuth & request login if not logged in
+	* Option to rate video
+	* Option to leave comment
+	* Option to post comment to YouTube
+	* Option to logout
