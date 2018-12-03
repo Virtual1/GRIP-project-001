@@ -1,5 +1,6 @@
 Design for models: What fields do we need:
-CREATORS
+
+CREATORS:
 Creator name
 Channel name
 Channel ID
@@ -10,3 +11,26 @@ Last video uploaded date
 last video uploaded title
 languages
 tech used
+
+VIDEO:
+Video ID
+Nr views
+Nr Likes
+Nr dislikes
+nr comments
+date uploaded
+Video Title
+tech used *
+language (spoken) *
+language (subtitles) *
+level *
+type *
+project *
+area *
+rating **
+userrated **
+usercomment **
+usercommenttoyt **
+
+
+
